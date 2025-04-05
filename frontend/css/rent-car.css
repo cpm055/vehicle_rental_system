@@ -1,0 +1,202 @@
+/* Rent Car Page Styles */
+
+
+.rent-car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 100px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Left Section - Car Details */
+.rent-car-content {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+    animation: slideInLeft 0.6s ease-in-out;
+}
+
+/* Right Section - Rental Form */
+.rent-form {
+    flex: 1;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    animation: slideInRight 0.6s ease-in-out;
+}
+
+/* Title */
+.rent-car-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #2c3e50;
+}
+
+/* Car Image */
+.rent-car-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rent-car-image:hover {
+    transform: scale(1.05);
+}
+
+/* Car Details */
+.rent-car-price {
+    font-size: 20px;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rent-car-price span {
+    color: #27ae60;
+    font-size: 24px;
+}
+
+/* Rental Duration */
+.rent-duration-label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+}
+
+.rent-duration-input {
+    width: 60px;
+    padding: 6px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.rent-duration-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: inset 0px 3px 6px rgba(0, 123, 255, 0.15);
+}
+
+/* Total Price */
+.rent-car-total {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.rent-car-total span {
+    color: #d9534f;
+    font-size: 22px;
+}
+
+/* Form Labels */
+.rent-form h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.rent-form label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 12px 0 6px;
+    color: #444;
+}
+
+/* Input Fields */
+.rent-input, .rent-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.rent-input:focus, .rent-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: inset 0px 3px 6px rgba(0, 123, 255, 0.15);
+}
+
+/* Textarea Styling */
+.rent-textarea {
+    height: 90px;
+    resize: none;
+}
+
+/* Rent Car Button */
+.rent-car-button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 18px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.rent-car-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,62 @@
+
+
+
+
+
+
+.login-btn {
+    height: 40px;
+    width: 100px;
+    font-family: "Outfit", serif;
+    margin: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid ;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: rgba(0, 0, 0, 0.172);
+}
+
+.signup-btn {
+    height: 40px;
+    width: 100px;
+    font-family: "Outfit", serif;
+    margin: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid ;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: rgba(0, 0, 0, 0.172);
+}
+
+
+.login-btn2 {
+    height: 40px;
+    width: 100px;
+    font-family: "Outfit", serif;
+    margin: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: rgb(43, 0, 255);
+    border-radius: 10px;
+    border: 3px solid ;
+    cursor: pointer;
+}
+
+.login-btn2:hover {
+    background-color: rgba(0, 0, 0, 0.172);
+}
+
+.logo {
+    font-family: "Unbounded", serif;
+    color: white;
+}
