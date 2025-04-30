@@ -6,33 +6,25 @@ import { registerUser, loginUser, deleteUser, adminLogin, registerAdmin, staffLo
 const router = express.Router();
 
 router.post("/sign-up", registerUser);
-// Registers a new user (probably creates a user in the database)
-
 router.post("/login", loginUser);
-// Authenticates a user and returns a token/session
-
 router.delete("/users/:id", deleteUser);
-// Deletes a user by their ID
-
-router.get('/users', getUsers);
-// Retrieves a list of all users
-
-router.get('/user/:id', getUser);
-// Retrieves a single user by ID
-
-router.put('/user/:id', updateUser);
-// Updates user information by ID
-
+router.get('/users', getUsers)
+router.get('/user/:id', getUser)
+router.put('/user/:id', updateUser)
 
 router.post("/adminLogin", adminLogin);
 router.post("/adminSignup", registerAdmin);
 
-router.post("/staffLogin", staffLogin);
-router.post("/staffSignUp", registerStaff);
-router.get("/staff", getStaff);
-router.get("/staff/:id", getAStaff);
-router.put("/staff/:id", updateStaff);
-router.delete("/staff/:id", deleteStaff);
+// Auth
+router.post("/staff/login", staffLogin);
+router.post("/staff/signup", registerStaff);
+
+// CRUD Operations
+router.get("/staff", getStaff);            // Get all staff
+router.get("/staff/:id", getAStaff);       // Get a specific staff member by ID
+router.put("/staff/:id", updateStaff);     // Update a specific staff member
+router.delete("/staff/:id", deleteStaff);  // Delete a specific staff member
+
 
 router.post('/delManLogin', delManagerLogin);
 router.post("/delManSignUp", registerDelManager);
