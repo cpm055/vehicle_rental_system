@@ -9,7 +9,19 @@ function CarType() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const filterVehiclesByCategory = (category) => {
+        return vehicles.filter(vehicle => vehicle.category === category);
+    };
 
+    const handleFilterChange = (event) => {
+        const selectedCategory = event.target.value;
+        if (selectedCategory === "all") {
+            setVehicles(vehicles); // Show all vehicles
+        } else {
+            const filteredVehicles = filterVehiclesByCategory(selectedCategory);
+            setVehicles(filteredVehicles);
+        }
+    };
     useEffect(() => {
         const fetchVehicles = async () => {
             try {
