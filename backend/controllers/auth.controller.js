@@ -111,6 +111,7 @@ export const updateUser = async (req, res) => {
 
     const updateData = { email, full_name, address, phone };
 
+    //password
     // If password is provided, hash it before updating
     if (password) {
       const salt = await bcrypt.genSalt(10);
@@ -132,7 +133,7 @@ export const updateUser = async (req, res) => {
   }
 };
 
-//Admin
+//Admin login
 export const adminLogin = async (req, res) => {
   const { email, password } = req.body;
 
@@ -181,7 +182,7 @@ export const registerAdmin = async (req, res) => {
 
 
 
-//Staff
+//Staff login
 export const staffLogin = async (req, res) => {
   const { email, password } = req.body;
 
