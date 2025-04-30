@@ -33,7 +33,7 @@ export const addVehicle = async (req, res) => {
             filter.milage = { $gte: parseInt(minMileage) };
         }
 
-        // Filter by category (Include SUVs, sedans, etc.)
+        // Filter by category (Include SUVs, sedans and etc.)
         if (category) {
             filter.category = { $in: Array.isArray(category) ? category : [category] };
         }
@@ -57,7 +57,7 @@ export const addVehicle = async (req, res) => {
         res.status(200).json({ success: true, vehicles });
     } catch (err) {
         console.error("Error:", err.message);
-        res.status(500).json({ success: false, message: "Server port Error" });
+        res.status(500).json({ success: false, message: "Server Error" });
     }
 };
 
