@@ -20,29 +20,24 @@ function AddDelPerson() {
 
     
 
-    const [loading, setLoading] = useState(false);
-
-const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    try {
-        const response = await axios.post("http://localhost:5000/api/delPerSignUp", formData);
-        console.log(response);
-        if (response.data.success) {
-            toast.success("User Added successfully!");
-            setTimeout(() => {
-                navigate("/a-dashboard/manDelPerson");
-            }, 1000);
-        } else {
-            toast.error(response.data.message || "Error in User Creation");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post("http://localhost:5000/api/delPerSignUp", formData);
+            console.log(response);
+            if (response.data.success) {
+                toast.success("User Added successful!");
+                setTimeout(() => {
+                    navigate("/a-dashboard/manDelPerson");
+                }, 1000);
+            } else {
+                toast.error(response.data.message || "Error in User Creation");
+            }
+        } catch (error) {
+            console.error(error);  // Log the error for debugging
+            toast.error("Account creation failed! Please try again.");
         }
-    } catch (error) {
-        console.error(error);
-        toast.error("Account creation failed! Please try again.");
-    } finally {
-        setLoading(false);
-    }
-};
+    };
 
     return (
         <div className="add-user-container">
