@@ -6,11 +6,23 @@ import { registerUser, loginUser, deleteUser, adminLogin, registerAdmin, staffLo
 const router = express.Router();
 
 router.post("/sign-up", registerUser);
+// Registers a new user (probably creates a user in the database)
+
 router.post("/login", loginUser);
+// Authenticates a user and returns a token/session
+
 router.delete("/users/:id", deleteUser);
-router.get('/users', getUsers)
-router.get('/user/:id', getUser)
-router.put('/user/:id', updateUser)
+// Deletes a user by their ID
+
+router.get('/users', getUsers);
+// Retrieves a list of all users
+
+router.get('/user/:id', getUser);
+// Retrieves a single user by ID
+
+router.put('/user/:id', updateUser);
+// Updates user information by ID
+
 
 router.post("/adminLogin", adminLogin);
 router.post("/adminSignup", registerAdmin);
