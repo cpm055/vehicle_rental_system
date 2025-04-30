@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" id="car-navigation">
+  <defs>
+    <linearGradient id="a" x1="51" x2="59" y1="23.5" y2="23.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2f0f3"></stop>
+      <stop offset="1" stop-color="#a5b7c3"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="d" x1="5" x2="13"></linearGradient>
+    <linearGradient id="b" x1="11" x2="20" y1="49" y2="49" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#243384"></stop>
+      <stop offset="1" stop-color="#0f274b"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="e" x1="8" x2="55.93" y1="28" y2="28"></linearGradient>
+    <linearGradient id="f" x1="12" x2="22" y1="37" y2="37" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efad7b"></stop>
+      <stop offset="1" stop-color="#ed7a5f"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#b" id="g" x1="25.22" x2="36.6" y1="37.5" y2="37.5"></linearGradient>
+    <linearGradient id="c" x1="16.11" x2="47.88" y1="22" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#23c8de"></stop>
+      <stop offset="1" stop-color="#117bc9"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#c" id="h" x1="35" x2="59" y1="41" y2="41"></linearGradient>
+    <linearGradient xlink:href="#a" id="i" x1="38.95" x2="53.1" y1="42.47" y2="42.47"></linearGradient>
+  </defs>
+  <g>
+    <rect width="8" height="5" x="51" y="21" fill="url(#a)" rx="2.5" ry="2.5"></rect>
+    <rect width="8" height="5" x="5" y="21" fill="url(#d)" rx="2.5" ry="2.5"></rect>
+    <path fill="url(#b)" d="M11,45h9a0,0,0,0,1,0,0v5.73A2.27,2.27,0,0,1,17.73,53H13.27A2.27,2.27,0,0,1,11,50.73V45A0,0,0,0,1,11,45Z"></path>
+    <path fill="url(#e)" d="M55.86,31.67a4.4,4.4,0,0,1,.07.73V33A12,12,0,0,0,35,40c0,.33,0,.66,0,1a11.86,11.86,0,0,0,.38,3H26l-1,1H11a3,3,0,0,1-3-3V32.4a4.4,4.4,0,0,1,.07-.73l-.07,0a3.89,3.89,0,0,1,.81-1.79L11.93,26l3.63-10.9A6,6,0,0,1,21.25,11H42.68a6,6,0,0,1,5.69,4.1L52,26l3.12,3.9a3.89,3.89,0,0,1,.81,1.79Z"></path>
+    <path fill="url(#f)" d="M14,40h6a2,2,0,0,0,2-2V36.77a2,2,0,0,0-1.75-2L15,34H14a2,2,0,0,0-2,2v2A2,2,0,0,0,14,40Z"></path>
+    <path fill="url(#g)" d="M36.6,35A12,12,0,0,0,35,40H26.82a1,1,0,0,1-1-.8l-.6-3a1,1,0,0,1,1-1.2Z"></path>
+    <path fill="url(#c)" d="M47.69,25.15a2.83,2.83,0,0,1-.55,3l0,0A3,3,0,0,1,45,29H19a3,3,0,0,1-2.38-1.17,2.81,2.81,0,0,1-.32-2.65l3.27-8.87A2,2,0,0,1,21.44,15H42.56a2,2,0,0,1,1.87,1.31Z"></path>
+    <path fill="url(#h)" d="M59,41a12,12,0,0,1-23.62,3A11.86,11.86,0,0,1,35,41c0-.34,0-.67,0-1a12,12,0,0,1,24,1Z"></path>
+    <polygon fill="url(#i)" points="48.85 49.55 45.39 43.11 38.95 39.65 53.1 35.4 48.85 49.55"></polygon>
+  </g>
+</svg>

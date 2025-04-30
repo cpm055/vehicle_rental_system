@@ -1,0 +1,112 @@
+.smartAssist {
+    display: flex;
+    padding: 100px 50px;
+    gap: 100px;
+    background: url('../../src/assets/images/graphics/header2.svg') no-repeat;
+}
+
+.left {
+    min-width: 500px;
+}
+.smart-heading {
+    color: rgb(255, 255, 255);   
+    font-family: "Unbounded", serif;
+    padding:  40px 10px;
+}
+.smartForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.smartForm label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.smartForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.smartForm input:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+}
+
+.get-btn {
+    background: #ff6600;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-btn:hover {
+    background: #e65c00;
+}
+
+.travelDetails {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.t-details {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 8px;
+    border-left: 4px solid #3c00ff;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.car-list-new {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    justify-content: flex-start;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 500px; /* Set the max height for the scrollable area */
+}
+
+.car-list-new > div {
+    flex: 0 0 calc(33.333% - 30px); /* 3 items per row, subtract gap */
+    box-sizing: border-box;
+}
+
+/* Optional: Styling for scrollbars */
+.car-list-new::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width */
+}
+
+.car-list-new::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Scrollbar color */
+    border-radius: 10px;
+}
+

@@ -1,0 +1,336 @@
+.manage {
+    width: max-content;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+    background-color: #47BF7E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.add:hover {
+    background-color: #3aa86d;
+}
+
+.generate-report {
+    background-color: #4f47bf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.generate-report:hover {
+    background-color: #3a4ca8;
+}
+
+.manage-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Action Buttons Layout */
+.manage-action {
+    display: flex;
+    gap: 12px;
+}
+
+/* Table Header */
+.manage-table thead {
+    background-color: #a0b4e3; /* Soft muted background */
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Table Header & Cell Styling */
+.manage-table th, 
+.manage-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB; /* Soft border */
+}
+
+/* Rounded Corners for the First and Last Columns */
+.manage-table th:first-child, 
+.manage-table td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.manage-table th:last-child, 
+.manage-table td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Alternating Row Colors for Soft Contrast */
+.manage-table tbody tr:nth-child(even) {
+    background-color: #FAFBFC;
+}
+
+/* Hover Effect - Subtle Background Change */
+.manage-table tbody tr:hover {
+    background-color: #F1F5F9;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.update-btn, .delete-btn, .assign-btn{
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 4px;
+}
+
+/* assign Button */
+.assign-btn {
+    background-color: #475fbf; /* Professional Green */
+    color: white;
+    box-shadow: 0px 3px 8px rgba(71, 191, 126, 0.3);
+}
+
+.assign-btn:hover {
+    background-color: #3a50a883;
+    box-shadow: 0px 5px 12px rgba(71, 191, 126, 0.5);
+}
+
+
+/* Update Button */
+.update-btn {
+    background-color: #47BF7E; /* Professional Green */
+    color: white;
+    box-shadow: 0px 3px 8px rgba(71, 191, 126, 0.3);
+}
+
+.update-btn:hover {
+    background-color: #3aa86a;
+    box-shadow: 0px 5px 12px rgba(71, 191, 126, 0.5);
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #E74C3C; /* Elegant Red */
+    color: white;
+    box-shadow: 0px 3px 8px rgba(231, 76, 60, 0.3);
+}
+
+.delete-btn:hover {
+    background-color: #c44135;
+    box-shadow: 0px 5px 12px rgba(231, 76, 60, 0.5);
+}
+
+/* Add User Form Container */
+.add-user-container {
+    display: flex;
+    flex-direction: column;
+    margin:  auto;
+    justify-content: center;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading */
+.add-user-heading {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Fields */
+.add-user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #47BF7E;
+    outline: none;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Back Button */
+.back-btn {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    flex: 1;
+}
+
+.back-btn:hover {
+    background-color: #bbb;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #47BF7E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    flex: 1;
+}
+
+.submit-btn:hover {
+    background-color: #3aa86a;
+    box-shadow: 0px 4px 10px rgba(71, 191, 126, 0.4);
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.form-select:hover {
+    border-color: #888;
+}
+
+.vehicle-image {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Scrollable Table Container */
+.table-container {
+    max-height: 400px; /* Set the max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling (if needed) */
+    border: 1px solid #ccc; /* Optional: Add border for better visibility */
+}
+
+/* Make the table fixed inside the scroll container */
+.manage-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for table headers */
+.manage-table thead {
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+}
+
+
+
+/* Style for vehicle image */
+.vehicle-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.delete-btn:disabled {
+    /* Styles for the disabled button */
+    background-color: #bdc3c7;  /* Light grey */
+    color: #7f8c8d;             /* Darker grey */
+    cursor: not-allowed;        /* Show the not-allowed cursor */
+    opacity: 0.5;               /* Reduce opacity to indicate it's disabled */
+}
+
+.delete-btn:disabled:hover {
+    background-color: #bdc3c7;  /* No hover effect when disabled */
+}
+
+.update-btn:disabled {
+    /* Styles for the disabled button */
+    background-color: #bdc3c7;  /* Light grey */
+    color: #7f8c8d;             /* Darker grey */
+    cursor: not-allowed;        /* Show the not-allowed cursor */
+    opacity: 0.5;               /* Reduce opacity to indicate it's disabled */
+}
+
+.update-btn:disabled:hover {
+    background-color: #bdc3c7;  /* No hover effect when disabled */
+}

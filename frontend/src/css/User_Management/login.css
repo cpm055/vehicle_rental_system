@@ -1,0 +1,62 @@
+
+
+
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 200px;
+    font-family: "Outfit", serif;
+}
+
+.r-log {
+    width: 400px;
+    
+}
+
+
+
+.l-log {
+    width: 30vw;
+    height: 70vh;
+    background-color: #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+} 
+
+.r-sign {
+    width: 30vw;
+    height: 80vh;
+    background-color: #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.log-in {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.log-head {
+    font-size: 3.4rem;
+}
+
+.log-in input {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.link {
+    color: black;
+}

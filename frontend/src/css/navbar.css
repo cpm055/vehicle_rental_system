@@ -1,0 +1,44 @@
+
+
+
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.485);
+}
+
+
+
+.nav-bar ul {
+    font-family: "Outfit", serif;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    color: white;
+
+}
+
+.nav-bar div {
+    display: flex;
+    gap: 20px;
+}
+
+.text-none {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-c {
+    font-family: "Outfit", serif;
+    display: flex;
+    gap: 20px;
+    color: white;
+    align-items: center;
+}
+

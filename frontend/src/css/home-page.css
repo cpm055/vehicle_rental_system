@@ -1,0 +1,23 @@
+
+
+
+
+.home {
+    height: 100vh;
+    background-image: url('../assets/images/cars/car3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero {
+    
+    font-family: "Outfit", serif;
+    display: flex;
+    justify-content: center;
+    font-size: 15rem;
+    color: white;
+    padding-top: 55vh;
+    text-shadow: 11px 30px 5px rgba(255,255,255,0.04);
+
+}
