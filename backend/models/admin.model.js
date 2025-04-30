@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+//admin form
+
 const adminSchema = mongoose.Schema({
     email: {
         type: String,
