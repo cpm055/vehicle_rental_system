@@ -9,15 +9,7 @@ function CarType2() {
         const [loading, setLoading] = useState(true);
         const [error, setError] = useState("");
         const navigate = useNavigate();
-        const handleSortByPrice = () => {
-          const sortedVehicles = [...vehicles].sort((a, b) => a.price - b.price);
-          setVehicles(sortedVehicles);
-        };
 
-        const handleFilterByAvailability = () => {
-          const availableVehicles = vehicles.filter(vehicle => vehicle.isAvailable);
-          setVehicles(availableVehicles);
-        };
   useEffect(() => {
     const fetchVehicles = async () => {
       try {

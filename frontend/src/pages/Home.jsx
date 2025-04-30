@@ -11,9 +11,7 @@ function Home() {
             <NavBar/>
             <Outlet /> 
         </>
-    <footer>
-        <p>© 2023 Vehicle Rental System. All rights reserved.</p>
-    </footer>
+    );
 }
 
 export default Home;

@@ -9,31 +9,7 @@ function CarType() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
     const navigate = useNavigate();
-    const filterVehiclesByCategory = (category) => {
-        return vehicles.filter(vehicle => vehicle.category === category);
-    };
-    const categories = ["all", "SUV", "Sedan", "Truck", "Hatchback"];
 
-    const renderCategoryFilter = () => {
-        return (
-            <select onChange={handleFilterChange} className="category-filter">
-                {categories.map((category, index) => (
-                    <option key={index} value={category}>
-                        {category}
-                    </option>
-                ))}
-            </select>
-        );
-    };
-    const handleFilterChange = (event) => {
-        const selectedCategory = event.target.value;
-        if (selectedCategory === "all") {
-            setVehicles(vehicles); // Show all vehicles
-        } else {
-            const filteredVehicles = filterVehiclesByCategory(selectedCategory);
-            setVehicles(filteredVehicles);
-        }
-    };
     useEffect(() => {
         const fetchVehicles = async () => {
             try {

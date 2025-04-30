@@ -29,16 +29,6 @@ function CarType3() {
     fetchVehicles();
   }, []);
 
-  useEffect(() => {
-    console.log("Vehicles updated:", vehicles);
-  }, [vehicles]);
-
-  useEffect(() => {
-    if (error) {
-      console.error("An error occurred:", error);
-    }
-  }, [error]);
-
   const handleCarClick = (vehicle) => {
     navigate(`/rent/${vehicle._id}`, { state: vehicle });
   };
