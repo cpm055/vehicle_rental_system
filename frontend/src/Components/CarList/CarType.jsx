@@ -12,7 +12,19 @@ function CarType() {
     const filterVehiclesByCategory = (category) => {
         return vehicles.filter(vehicle => vehicle.category === category);
     };
+    const categories = ["all", "SUV", "Sedan", "Truck", "Hatchback"];
 
+    const renderCategoryFilter = () => {
+        return (
+            <select onChange={handleFilterChange} className="category-filter">
+                {categories.map((category, index) => (
+                    <option key={index} value={category}>
+                        {category}
+                    </option>
+                ))}
+            </select>
+        );
+    };
     const handleFilterChange = (event) => {
         const selectedCategory = event.target.value;
         if (selectedCategory === "all") {
