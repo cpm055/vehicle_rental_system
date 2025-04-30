@@ -1,4 +1,3 @@
-
 import '../css/home-page.css';
 
 function HomePage() {
