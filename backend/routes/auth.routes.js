@@ -15,16 +15,12 @@ router.put('/user/:id', updateUser)
 router.post("/adminLogin", adminLogin);
 router.post("/adminSignup", registerAdmin);
 
-// Auth
-router.post("/staff/login", staffLogin);
-router.post("/staff/signup", registerStaff);
-
-// CRUD Operations
-router.get("/staff", getStaff);            // Get all staff
-router.get("/staff/:id", getAStaff);       // Get a specific staff member by ID
-router.put("/staff/:id", updateStaff);     // Update a specific staff member
-router.delete("/staff/:id", deleteStaff);  // Delete a specific staff member
-
+router.post("/staffLogin", staffLogin);
+router.post("/staffSignUp", registerStaff);
+router.get("/staff", getStaff);
+router.get("/staff/:id", getAStaff);
+router.put("/staff/:id", updateStaff);
+router.delete("/staff/:id", deleteStaff);
 
 router.post('/delManLogin', delManagerLogin);
 router.post("/delManSignUp", registerDelManager);
