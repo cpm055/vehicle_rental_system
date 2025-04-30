@@ -1,7 +1,7 @@
 .smartAssist {
     display: flex;
     padding: 100px 50px;
-    gap: 90px;
+    gap: 100px;
     background: url('../../src/assets/images/graphics/header2.svg') no-repeat;
 }
 
