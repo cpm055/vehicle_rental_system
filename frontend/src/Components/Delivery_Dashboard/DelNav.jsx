@@ -10,6 +10,8 @@ import { jwtDecode } from "jwt-decode";
 
 import { useNavigate } from "react-router-dom";
 
+// Functional component for Delivery Manager Navigation Bar
+
 function DelNav() {
 
     const navigate = useNavigate();
@@ -21,6 +23,8 @@ function DelNav() {
         localStorage.removeItem("token");
         navigate("/");
     };
+
+     // useEffect runs on component mount to check login status and decode JWT
 
     useEffect(() => {
         const token = localStorage.getItem('token'); 
