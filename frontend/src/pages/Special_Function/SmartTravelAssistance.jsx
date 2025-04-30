@@ -150,7 +150,7 @@ const calculateFuelStops = (distanceKm) => {
         "colombo",
         "malabe",
         "galle",
-        "negombo",
+        "negombo",       //NEGOMBO
         "mount lavinia",//COLOMBO
         "fort",         // Colombo Fort
         "wellawatte",   // Wellawatte area

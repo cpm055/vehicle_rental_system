@@ -33,7 +33,7 @@ export const addVehicle = async (req, res) => {
             filter.milage = { $gte: parseInt(minMileage) };
         }
 
-        // Filter by category (Include SUVs, sedans, etc.)
+        // Filter by category (Include SUVs, sedans and etc.)
         if (category) {
             filter.category = { $in: Array.isArray(category) ? category : [category] };
         }

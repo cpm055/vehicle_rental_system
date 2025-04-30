@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
-const vehicleShema =  mongoose.Schema({
+const vehicleShema  =  mongoose.Schema({
     name: {
         type: String,
-        required: true
+        required: true 
     },
     model: {
         type: String,
@@ -29,7 +29,10 @@ const vehicleShema =  mongoose.Schema({
         type: String,
         required: true
     }
+
+    
 });
+
 
 const Vehicle = mongoose.model('Vehicle', vehicleShema);
 
